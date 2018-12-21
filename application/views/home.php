@@ -48,7 +48,7 @@
 			<section id="sec-form">
 				<h1>FORM</h1>
 				<form method="post" action="home.php" id="form-daftar">
-					<div class="form-gruop">
+					<table class="form-group">
 						<tr>
 							<td><label for="input-nama">Nama</label></td>
 							<td>:</td>
@@ -57,18 +57,23 @@
 						<tr>
 							<td><label for="input-email">Email</label></td>
 							<td>:</td>
-							<td><input type="email" class="form-control" id="input-email" aria-describedby="emailHelp" name="input-nama"></td>
+							<td><input type="email" class="form-control"  id="input-email" aria-describedby="emailHelp" name="input-nama"></td>
 						</tr>
 						<tr>
 							<td><label for="input-password">Password</label></td>
 							<td>:</td>
-							<td><input type="Password" class="form-control" id="input-password" name="input-password" class="input-password"></td>
+							<td>
+								<div class="row no-gutters">
+									<div class="col-md-7">
+										<input type="Password" id="input-password" name="input-password" class="form-control">
+									</div>
+								</div>
+							</td>
 						</tr>
-					</div>
 					</table>
 					<br>
-					<button class="btn btn-primary .btn-lg" type="submit" id="btn-simpan">Simpan</button>
-					<button class="btn btn-warning .btn-lg" type="reset" id="btn-reset">Reset</button>
+					<button class="btn btn-primary btn-lg" type="submit" id="btn-simpan">Simpan</button>
+					<button class="btn btn-warning btn-lg" type="reset" id="btn-reset">Reset</button>
 				</form>
 				<br>
 			</section>
@@ -79,7 +84,7 @@
 			<!-- Isi Tabel-->
 			<section id="sec-form">
 				<h1>TABEL</h1>
-				<table class="table .text-light">
+				<table class="table">
 					<thead class="bg-dark text-light">
 						<tr>
 							<th class="text-center" scope="col">NO</th>
